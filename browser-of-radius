@@ -12,3 +12,9 @@ border-radius
 		    4.margin
 	标准盒模型，怪异盒模型（ie6以下不写！doctype就是怪异）
 }
+{
+	对于文本的处理
+	text-overflow：ellipsis;//多出的文本省略号
+	overflow:hidden;溢出隐藏
+	white-space:nowarp;不换行
+}

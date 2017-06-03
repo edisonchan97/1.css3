@@ -8,15 +8,25 @@
 		margin: 0;
 		padding: 0;
 	}
-	div{
+	div,div::after{
 		height: 200px;
 		width: 200px;
 		border-radius: 50%;
 		border:10px solid #000;
 		position: absolute;
 	}
+	.div::after{
+		content: "";
+		top:-10px;
+		left: -10px;
+	}
 	.blue{
 		border-color: blue;
+	}
+	.blue::after{
+		border-color: blue;
+        z-index: 1;
+        border-bottom-color: transparent;
 	}
 	.yellow{
 		border-color: yellow;
