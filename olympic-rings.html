@@ -8,14 +8,14 @@
 		margin: 0;
 		padding: 0;
 	}
-	div,div::after{
+	.circle,.circle::after{
 		height: 200px;
 		width: 200px;
 		border-radius: 50%;
 		border:10px solid #000;
 		position: absolute;
 	}
-	.div::after{
+	.circle::after{
 		content: "";
 		top:-10px;
 		left: -10px;
@@ -23,36 +23,57 @@
 	.blue{
 		border-color: blue;
 	}
-	.blue::after{
+	.blue.circle::after{
 		border-color: blue;
         z-index: 1;
         border-bottom-color: transparent;
 	}
 	.yellow{
 		border-color: yellow;
-		left: 180px;
+		left: 230px;
+	}
+	.yellow.circle::after{
+		border-color: yellow;
+        z-index: 1;
+        border-left-color: transparent;
 	}
 	.black{
 		border-color: black;
 		top: 90px;
-		left: 270px;
+		left: 340px;
+	}
+	.black.circle::after{
+		border-color: black;
+        z-index: 2;
+        border-top-color: transparent;
 	}
 	.green{
 		border-color: green;
 		left: 90px;
 		top: 90px;
 	}
+	.green.circle::after{
+		border-color: green;
+        z-index: 2;
+        border-top-color: transparent;
+        border-right-color: transparent;
+	}
 	.red{
 		border-color: red;
-		left:360px;
+		left:460px;
+	}
+	.red.circle::after{
+		border-color: red;
+        z-index: 1;
+        border-bottom-color: transparent;
 	}
 	</style>
 </head>
 <body>
-	<div class="blue"></div>
-	<div class="red"></div>
-	<div class="yellow"></div>
-	<div class="green"></div>
-	<div class="black"></div>
+	<div class="circle blue"></div>
+	<div class="circle red"></div>
+	<div class="circle yellow"></div>
+	<div class="circle green"></div>
+	<div class="circle black"></div>
 </body>
 </html>
