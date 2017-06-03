@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-flex</title>
+	<style>
+	.main div,.ver div{
+		/*width: 100px;*/
+		/*display: -webkit-box;*/
+		margin: 10px;
+		height: 100px;
+	}
+	.main{
+		
+		display: -webkit-box;
+	}
+		#div1{
+			background: #f00;
+			-webkit-box-flex:1; 
+		}
+		#div2{
+			background: #0f0;
+			-webkit-box-flex:1;
+		}
+		#div3{
+			background: #00f;
+			-webkit-box-flex:2;
+		}
+	.ver{
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+	}
+		#div1-1{
+			background: #00f;
+			-webkit-box-flex:2;
+		}
+		#div1-2{
+			background: #0f0;
+			-webkit-box-flex:2;
+		}
+		#div1-3{
+			background: #f00;
+			-webkit-box-flex:2;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+	</div>
+	<div class="ver">
+		<div id="div1-3"></div>
+		<div id="div1-2"></div>
+		<div id="div1-1"></div>
+	</div>
+</body>
+</html>
