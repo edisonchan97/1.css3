@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转木马</title>
+</head>
+<style>
+	#stage{
+		height: 400px;
+		width: 1000px;
+		background: #666;
+		margin: 80px auto;
+		box-shadow:0 0 5px 5px rgba(0,0,0,0.5);
+		position: relative;
+		-webkit-perspective:1600px;
+		-webkit-perspective-origin: center -50%;
+	}
+	#rotate{
+		margin: 100px auto;
+	}
+	#rotate div{
+		position: absolute;
+		top:0;
+		left: 400px;
+		width: 200px;
+		height: 100px;
+		margin:100px auto;
+		/*-webkit-transform-style:preserve-3d;*/
+	}
+	#rotate{
+		-webkit-animation: run 4s linear infinite;
+	}
+	@-webkit-keyframes run{
+		100%{
+			-webkit-transform:rotateY(360deg);
+			
+		}
+		
+	}
+	img{
+		width: 200px;
+		height: 150px;
+		
+	}
+	#one{
+		-webkit-transform: translateZ(400px);
+	}
+	#nine{
+		-webkit-transform:rotateY(-40deg) translateZ(400px);
+	}
+	#two{
+		-webkit-transform:rotateY(-80deg) translateZ(400px);
+	}
+	#three{
+		-webkit-transform:rotateY(-120deg) translateZ(400px);
+	}
+	#four{
+		-webkit-transform:rotateY(-160deg) translateZ(400px);
+	}
+	#five{
+		-webkit-transform:rotateY(-200deg) translateZ(400px);
+	}
+	#six{
+		-webkit-transform:rotateY(-240deg) translateZ(400px);
+	}
+	#seven{
+		-webkit-transform:rotateY(-280deg) translateZ(400px);
+	}
+	#eight{
+		-webkit-transform:rotateY(-320deg) translateZ(400px);
+	}
+</style>
+<body>
+	<div id="stage">
+		<div id="rotate">
+			<div id="one"><img src="img/1.jpg" alt=""></div>
+			<div id="two"><img src="img/2.jpg" alt=""></div>
+			<div id="three"><img src="img/3.jpg" alt=""></div>
+			<div id="four"><img src="img/4.jpg" alt=""></div>
+			<div id="five"><img src="img/5.jpg" alt=""></div>
+			<div id="six"><img src="img/6.jpg" alt=""></div>
+			<div id="seven"><img src="img/7.jpg" alt=""></div>
+			<div id="eight"><img src="img/8.jpg" alt=""></div>
+			<div id="nine"><img src="img/9.jpg" alt=""></div>
+		</div>
+	</div>
+</body>
+<script>
+
+</script>
+</html>
