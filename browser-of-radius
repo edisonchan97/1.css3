@@ -18,3 +18,5 @@ border-radius
 	overflow:hidden;溢出隐藏
 	white-space:nowarp;不换行
 }
+图片的预加载，如果是js生成的结构，图片会有在一些处理上会有问题，取不到高，宽。
+可以使用onload事件； 
