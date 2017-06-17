@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#header{
+	height: 100px;
+	background: #fff;
+	width: 100%;
+	display: -webkit-box;
+}
+#menu span{
+	display: block;
+	margin-left: 2px;
+}
+#logo img{
+	width: 73px;
+}
+#login{
+	text-align: right;
+}
+#login a{
+	color: #b89f7a;
+    font-weight: 700;
+    font-size: 14px;
+}
